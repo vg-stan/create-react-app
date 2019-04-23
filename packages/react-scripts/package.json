@@ -1,5 +1,5 @@
 {
-  "name": "react-scripts",
+  "name": "@vg-stan/react-scripts",
   "version": "2.1.8",
   "description": "Configuration and scripts for Create React App.",
   "repository": "facebook/create-react-app",
@@ -26,6 +26,7 @@
   "dependencies": {
     "@babel/core": "7.2.2",
     "@svgr/webpack": "4.1.0",
+    "@vg-stan/react-dev-utils": "^8.0.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
     "babel-jest": "23.6.0",
