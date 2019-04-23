@@ -1,6 +1,6 @@
 {
   "name": "@vg-stan/react-dev-utils",
-  "version": "8.0.0",
+  "version": "8.0.1",
   "description": "Webpack utilities used by Create React App",
   "repository": "facebook/create-react-app",
   "license": "MIT",
