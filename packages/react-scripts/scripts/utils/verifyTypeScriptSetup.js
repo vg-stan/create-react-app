@@ -8,21 +8,24 @@
 
 'use strict';
 
-const chalk = require('react-dev-utils/chalk');
+const chalk = require('@vg-stan/react-dev-utils/chalk');
 const fs = require('fs');
 const resolve = require('resolve');
 const path = require('path');
 const paths = require('../../config/paths');
 const os = require('os');
-const immer = require('react-dev-utils/immer').produce;
-const globby = require('react-dev-utils/globby').sync;
+const immer = require('@vg-stan/react-dev-utils/immer').produce;
+const globby = require('@vg-stan/react-dev-utils/globby').sync;
 
 function writeJson(fileName, object) {
   fs.writeFileSync(fileName, JSON.stringify(object, null, 2) + os.EOL);
 }
 
 function verifyNoTypeScript() {
-  const typescriptFiles = globby(['**/*.(ts|tsx)', '!**/node_modules', '!**/*.d.ts'], { cwd: paths.appSrc });
+  const typescriptFiles = globby(
+    ['**/*.(ts|tsx)', '!**/node_modules', '!**/*.d.ts'],
+    { cwd: paths.appSrc }
+  );
   if (typescriptFiles.length > 0) {
     console.warn(
       chalk.yellow(
